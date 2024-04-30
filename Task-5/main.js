@@ -75,3 +75,15 @@ function getAllDrinks() {
         alert("Нет сохранённых напитков.");
     }
 }
+
+// Привязка кнопок
+const addInfo = document.getElementById('addInfo');
+const getInfo = document.getElementById('getInfo');
+const deleteInfo = document.getElementById('deleteInfo');
+const getAllName = document.getElementById('getAllName');
+
+// Привязка функций к событиям клика по кнопкам
+addInfo.addEventListener('click', addDrink);
+getInfo.addEventListener('click', getDrink);
+deleteInfo.addEventListener('click', deleteDrink);
+getAllName.addEventListener('click', getAllDrinks);
