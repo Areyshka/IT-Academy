@@ -65,3 +65,13 @@ function deleteDrink() {
         alert("Напиток не найден.");
     }
 }
+
+// Функция для вывода списка названий всех сохранённых напитков
+function getAllDrinks() {
+    let drinks = drinkStorage.getKeys();
+    if (drinks.length > 0) {
+        alert(`Список напитков: ${drinks.join("\n")}`);
+    } else {
+        alert("Нет сохранённых напитков.");
+    }
+}
