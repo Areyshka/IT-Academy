@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background-image: url(coctails.jpg);
+    background-repeat: repeat;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin-top: 170px
+}
+
+button {
+    background-color: white;
+    width: 420px;
+    height: 120px;
+    border: solid 4px #27292b;
+    font-family: 'Inter';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #27292b;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #27292b;
+    color: white;
+}
