@@ -42,3 +42,15 @@ function addDrink() {
     // Добавление информации в хранилище
     drinkStorage.addValue(name, {alcohol: alcohol, recipe: recipe});
 }
+
+// Функция для получения информации о напитке
+function getDrink() {
+    let name = prompt("Введите название напитка:");
+    let drink = drinkStorage.getValue(name);
+    if(drink) {
+        let info = `Напиток: ${name}\nАлкогольный: ${drink.alcohol ? "да" : "нет"}\nРецепт приготовления: ${drink.recipe}`;
+        alert(info);
+    } else {
+        alert("Напиток не найден.")
+    }
+} 
