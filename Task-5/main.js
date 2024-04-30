@@ -53,4 +53,15 @@ function getDrink() {
     } else {
         alert("Напиток не найден.")
     }
-} 
+}
+
+// Функция для удаления информации о напитке
+function deleteDrink() {
+    let name = prompt("Введите название напитка:");
+    let deleted = drinkStorage.deleteValue(name);
+    if (deleted) {
+        alert("Информация о напитке удалена.");
+    } else {
+        alert("Напиток не найден.");
+    }
+}
