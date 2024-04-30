@@ -29,3 +29,16 @@ class ObjStorageClass{
         return Object.keys(this.data);
     }
 }
+
+// Создание объекта для хранения информации о напитках
+let drinkStorage = new ObjStorageClass();
+
+// Функция для добавления информации о напитке
+function addDrink() {
+    let name = prompt("Введите название напитка:");
+    let alcohol = confirm("Напиток алкогольный?");
+    let recipe = prompt("Введите рецепт напитка:");
+
+    // Добавление информации в хранилище
+    drinkStorage.addValue(name, {alcohol: alcohol, recipe: recipe});
+}
