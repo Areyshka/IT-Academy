@@ -23,7 +23,7 @@ document.getElementById('textInput').addEventListener('input', () => {
     }
 })
 
-// Фуекция для подсчёта количества гласных
+// Функция для подсчёта количества гласных
 function getVowels(input) {
     input = input.toLowerCase();
     let count = 0;
