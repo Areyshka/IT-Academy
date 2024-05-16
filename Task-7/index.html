@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form">
+        <fieldset>
+            <legend>Регистрация пользователя</legend>
+            <label for="firstName">Имя пользователя: </label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="password">Пароль: </label>
+            <input type="password" id="password" name="password" required>
+            <img src="close-eye.png" alt="close eye" id="eyeClose">
+            <img src="open-eye.png" alt="open eye" id="eyeOpen">
+
+            <label for="repeatPassword">Подтвердите пароль: </label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required>
+
+            <label for="gender">Пол: </label>
+            <select id="gender" name="gender" required>
+                <option value="female">Женский</option>
+                <option value="male">Мужской</option>
+            </select>
+
+            <br>
+
+            <input type="checkbox" id="consent" value="agree" required>
+            <label for="consent">Я соглашаюсь с условиями обработки данных</label>
+
+        </fieldset>
+        <div>
+            <input type="submit" value="Отправить">
+        </div>
+    </form>
+    <p id="text"></p>
+    <p id="info"></p>
+    <script src="main.js"></script>
+</body>
+</html>
