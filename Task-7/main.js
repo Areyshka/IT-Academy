@@ -19,3 +19,30 @@ eyeOpen.addEventListener('click', () => {
     password.type = 'password';
     repeatPassword.type = 'password';
 });
+
+// Обработчик события отправки формы.
+let form = document.getElementById('form');
+form.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+// Получение значений полей формы.
+let firstName = document.getElementById('firstName').value;
+let gender = document.getElementById('gender').value;
+let consent = document.getElementById('consent').checked;
+let info = document.getElementById('info');
+
+// Проверка заполнения полей паролей формы.
+if (!password.value || !repeatPassword.value){
+    text.textContent = '';
+    return;
+// Проверка совпадения паролей.
+} else if (password.value !== repeatPassword.value) {
+    text.textContent = 'Пароль не подтверждён.';
+    text.style.display = 'block';
+    setTimeout(() => {
+        text.style.display = 'none';
+    }, 3000);
+    return;
+}
+
+});
