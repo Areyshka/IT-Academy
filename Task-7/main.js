@@ -45,4 +45,14 @@ if (!password.value || !repeatPassword.value){
     return;
 }
 
+// Вывод сообщения об успешной отправке формы, если все данные введены корректно.
+text.textContent = 'Данные успешно отправлены!';
+text.style.display = 'block';
+setTimeout(() => {
+    text.style.display = 'none';
+}, 3000);
+
+// Вывод отправленных данных.
+info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
+
 });
