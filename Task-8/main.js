@@ -37,6 +37,7 @@ if (!password.value || !repeatPassword.value){
     return;
 // Проверка совпадения паролей.
 } else if (password.value !== repeatPassword.value) {
+    info.innerHTML = '';
     text.textContent = 'Пароль не подтверждён.';
     text.style.display = 'block';
     setTimeout(() => {
@@ -45,7 +46,23 @@ if (!password.value || !repeatPassword.value){
     return;
 }
 
-// Вывод отправленных данных.
-info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
+// Добавление таймера 5 секунд после отправки формы и последующий вывод отправленных данных.
+let time = document.getElementById('time');
+let submit = document.getElementById('submit');
+
+time.style.display = 'block';
+info.innerHTML = '';
+time.textContent = 5;
+submit.disabled = true;
+let interval = setInterval(() => {
+    time.textContent -= 1;
+}, 1000);
+
+setTimeout(function() {
+    clearInterval(interval);
+    time.style.display = 'none';
+    submit.disabled = false;
+    info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
+}, 5000);
 
 });
