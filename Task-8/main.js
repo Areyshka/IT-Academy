@@ -29,7 +29,7 @@ form.addEventListener('submit', function (event) {
 let firstName = document.getElementById('firstName').value;
 let gender = document.getElementById('gender').value;
 let consent = document.getElementById('consent').checked;
-let info = document.getElementById('info');
+
 
 // Проверка заполнения полей паролей формы.
 if (!password.value || !repeatPassword.value){
@@ -59,7 +59,7 @@ time.style.display = 'block';
 info.innerHTML = '';
 time.textContent = 5;
 submit.disabled = true;
-let interval = setInterval(() => {
+const interval = setInterval(() => {
     time.textContent -= 1;
 }, 1000);
 
@@ -68,14 +68,16 @@ setTimeout(function() {
     time.style.display = 'none';
     submit.disabled = false;
     resultInfo();
-    info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
+    
 }, 5000);
 
-// Функция получения данных из localStorage.
-function resultInfo() {
-    const firstName = localStorage.getItem('firstName');
-    const password = localStorage.getItem('password.value');
-    const gender = localStorage.getItem('gender'); 
-}
-
 });
+
+// Функция получения данных из localStorage.
+const resultInfo = () => {
+    const firstName = localStorage.getItem('firstName');
+    const password = localStorage.getItem('password');
+    const gender = localStorage.getItem('gender'); 
+
+    info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
+};
