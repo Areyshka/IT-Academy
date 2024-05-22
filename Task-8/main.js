@@ -46,6 +46,11 @@ if (!password.value || !repeatPassword.value){
     return;
 }
 
+// Запись данных в localStorage.
+localStorage.setItem('firstName', firstName);
+localStorage.setItem('password', password);
+localStorage.setItem('gender', gender);
+
 // Добавление таймера 5 секунд после отправки формы и последующий вывод отправленных данных.
 let time = document.getElementById('time');
 let submit = document.getElementById('submit');
@@ -62,7 +67,15 @@ setTimeout(function() {
     clearInterval(interval);
     time.style.display = 'none';
     submit.disabled = false;
+    resultInfo();
     info.innerHTML = `Отправленные данные: <br>Имя пользователя: ${firstName}<br>Пароль: ${password.value}<br>Пол: ${gender}`;
 }, 5000);
+
+// Функция получения данных из localStorage.
+function resultInfo() {
+    const firstName = localStorage.getItem('firstName');
+    const password = localStorage.getItem('password');
+    const gender = localStorage.getItem('gender'); 
+}
 
 });
