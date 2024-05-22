@@ -48,7 +48,7 @@ if (!password.value || !repeatPassword.value){
 
 // Запись данных в localStorage.
 localStorage.setItem('firstName', firstName);
-localStorage.setItem('password', password);
+localStorage.setItem('password', password.value);
 localStorage.setItem('gender', gender);
 
 // Добавление таймера 5 секунд после отправки формы и последующий вывод отправленных данных.
@@ -74,7 +74,7 @@ setTimeout(function() {
 // Функция получения данных из localStorage.
 function resultInfo() {
     const firstName = localStorage.getItem('firstName');
-    const password = localStorage.getItem('password');
+    const password = localStorage.getItem('password.value');
     const gender = localStorage.getItem('gender'); 
 }
 
