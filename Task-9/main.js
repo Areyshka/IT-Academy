@@ -29,3 +29,28 @@
 //     }
 //     alert(count);
 // }
+
+// 3. Задача: Поиск максимального элемента в массиве
+// Создайте массив чисел и найдите в нем максимальное значение.
+
+// let arr = [5, 8, 3, 12, 6];
+
+// function maxValue() {
+//     alert(Math.max(...arr));
+// }
+
+// maxValue(arr);
+
+// let numbers = [5, 8, 3, 12, 6];
+
+// function maxValue() {
+//     let maxNum = numbers[0];
+//     for (let number of numbers) {
+//         if (number > maxNum) {
+//             maxNum = number;
+//         }
+//     }
+//     alert(maxNum);
+// }
+
+// maxValue(numbers);
