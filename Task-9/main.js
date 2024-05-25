@@ -93,3 +93,13 @@
 // }
 
 // getMin(arr);
+
+// 6. Счетчик посещений: localStorage
+// Создайте счетчик посещений страницы, который сохраняется в локальном хранилище. При каждом посещении страницы увеличивайте счетчик и выводите его на экран.
+
+// let visitCount = document.getElementById('visitCount');
+// let count = localStorage.getItem('count');
+
+// count++;
+// localStorage.setItem('count', count);
+// visitCount.textContent = count;
