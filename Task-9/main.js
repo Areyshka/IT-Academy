@@ -69,3 +69,27 @@
 // }
 
 // getSum(numbers);
+
+// 5. Поиск минимального элемента в массиве:
+
+// let arr = [5, 8, 3, 12, 6];
+
+// function getMin() {
+//     alert(Math.min(...arr));
+// }
+
+// getMin(arr);
+
+// let arr = [5, 8, 3, 12, 6];
+
+// function getMin() {
+//     let minValue = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (minValue > arr[i]) {
+//             minValue = arr[i];
+//         }
+//     }
+//     alert(minValue);
+// }
+
+// getMin(arr);
