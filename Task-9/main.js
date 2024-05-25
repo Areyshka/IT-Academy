@@ -54,3 +54,18 @@
 // }
 
 // maxValue(numbers);
+
+// 4.Сумма чисел в массиве:
+// Создайте массив чисел и найдите сумму всех чисел в массиве.
+
+// let numbers = [5, 8, 3, 12, 6];
+
+// function getSum () {
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i];
+//     }
+//     alert(sum);
+// }
+
+// getSum(numbers);
