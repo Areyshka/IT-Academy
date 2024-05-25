@@ -103,3 +103,16 @@
 // count++;
 // localStorage.setItem('count', count);
 // visitCount.textContent = count;
+
+
+// 7. Поиск элемента в массиве:
+// Создайте массив чисел и найдите в нем заданное число. Выведите на экран индекс этого числа в массиве.
+
+// let arr = [5, 8, 3, 12, 6];
+// let targetNumber = 12;
+
+// function findElem(arr, targetNumber) {
+//     alert(arr.indexOf(targetNumber));
+// }
+
+// findElem(arr, targetNumber);
