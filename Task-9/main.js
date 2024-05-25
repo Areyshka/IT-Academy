@@ -116,3 +116,25 @@
 // }
 
 // findElem(arr, targetNumber);
+
+// 8*. Задание: Создание пользователей
+// Создайте класс User, который представляет пользователя. У пользователя должны быть следующие свойства:
+// name (строка) - имя пользователя,
+// age (число) - возраст пользователя,
+// email (строка) - электронная почта пользователя.
+// Также у класса User должен быть метод getInfo(), который возвращает строку с информацией о пользователе в формате "Имя: [name], Возраст: [age], Email: [email]".
+
+// class User {
+//     constructor (name, age, email) {
+//         this.name = name;
+//         this.age = age;
+//         this.email = email;
+//     }
+
+//     getInfo() {
+//         return (`Имя: ${this.name}, Возраст: ${this.age}, Email: ${this.email}`)
+//     }
+// }
+
+// let user1 = new User("Elena", 27, "elena@mail.ru");
+// alert(user1.getInfo());
