@@ -114,3 +114,15 @@ let user = {
 //     output.textContent = inputText.value;
 // });
 
+// 7. Напишите программу, которая изменяет заголовок страницы в зависимости от того, активно ли окно браузера или скрыто. При активном окне заголовок должен быть "Hello", а если окно скрыто (например, пользователь переключился на другую вкладку), то заголовок должен быть "Come back!".    
+
+// let title = document.getElementById('title');
+
+// document.addEventListener ('visibilitychange', function() {
+//     if (document.hidden) {
+//         title.textContent = "Come back!";
+//     } else {
+//         title.textContent = "Hello";
+//     }
+// });
+
