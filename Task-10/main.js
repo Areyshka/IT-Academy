@@ -32,3 +32,33 @@
 
 // numbers();
 
+// 4. Напишите функцию, которая принимает два числа в качестве аргументов и возвращает их сумму.
+
+     //function declaration
+// function getSum(num1, num2) {
+//     return num1 + num2;
+// }
+
+// let result = getSum(2,5);
+// console.log(result);
+
+     //function expression
+// let sum = function(num1, num2) {
+// return num1 + num2;
+// }
+
+// let result = sum(9,4);
+// console.log(result);
+
+     //arrow function
+// let sum = (num1, num2) => num1 + num2;
+
+// let result = sum(7,9);
+// console.log(result);
+
+
+     //IIFE
+// console.log((function getSum(num1, num2) {
+//         return num1 + num2;
+// })(3,8));
+
