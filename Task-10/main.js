@@ -126,3 +126,28 @@ let user = {
 //     }
 // });
 
+// 8. (Ошибки)
+// Функция, которая приветствует пользователя по имени, исправленная
+
+// function greet(name) {
+//     return `Hello, ${name}!`;
+// }
+
+// let result = greet("Anton");
+// console.log(result);
+
+// Hello, Anton!
+
+
+// Функция, которая возвращает наибольшее из двух чисел, исправленная
+
+// function getMaxNumber(a, b) {
+//     if (a < b) {
+//         return b;
+//     } else {
+//         return a;
+//     }
+// }
+
+// let result = getMaxNumber(5,3);
+// console.log(result);
