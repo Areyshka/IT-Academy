@@ -69,14 +69,14 @@
 // Напишите функцию, которая удаляет поле "country" из объекта address
 // Напишите функцию, которая выводит всю информацию о пользователе в формате "Имя: {name}, Возраст: {age}, Город: {city}".
 
-let user = {
-    name: "Elena",
-    age: 27,
-    address : {
-        city: "Grodno",
-        country: "Belarus",
-    }
-};
+// let user = {
+//     name: "Elena",
+//     age: 27,
+//     address : {
+//         city: "Grodno",
+//         country: "Belarus",
+//     }
+// };
 
 // function changeAge(newAge) {
 //     user.age = newAge;
