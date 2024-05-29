@@ -105,3 +105,12 @@ let user = {
 
 // outputInfo();
 
+// 6. Напишите HTML страницу с полем ввода текста и блоком для отображения этого текста. Используя JavaScript, реализуйте следующее: при вводе текста в поле ввода, текст должен моментально отображаться в блоке.
+
+// let inputText = document.getElementById('inputText');
+// let output = document.getElementById('output');
+
+// inputText.addEventListener('input', function() {
+//     output.textContent = inputText.value;
+// });
+
