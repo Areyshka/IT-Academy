@@ -62,3 +62,46 @@
 //         return num1 + num2;
 // })(3,8));
 
+// 5. Работа с объектами:
+// Создайте объект user, содержащий поля name, age и address. address должен быть объектом, содержащим поля city и country
+// Напишите функцию, которая изменяет возраст в объекте myInfo
+// Напишите функцию, которая добавляет новое поле "email" в объект myInfo.
+// Напишите функцию, которая удаляет поле "country" из объекта address
+// Напишите функцию, которая выводит всю информацию о пользователе в формате "Имя: {name}, Возраст: {age}, Город: {city}".
+
+let user = {
+    name: "Elena",
+    age: 27,
+    address : {
+        city: "Grodno",
+        country: "Belarus",
+    }
+};
+
+// function changeAge(newAge) {
+//     user.age = newAge;
+// }
+
+// changeAge(25);
+// console.log(user);
+
+// function addEmail(email) {
+//     user.email = email;
+// }
+
+// addEmail("elena@mail.ru");
+// console.log(user);
+
+// function deleteCountry() {
+//     delete user.address.country;
+// }
+
+// deleteCountry();
+// console.log(user);
+
+// function outputInfo() {
+//     console.log(`Имя: ${user.name}, Возраст: ${user.age}, Город: ${user.address.city}`);
+// }
+
+// outputInfo();
+
