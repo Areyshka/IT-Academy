@@ -11,4 +11,18 @@
 // let result = arr.reduce((sum, elem) => sum + elem, 0);
 // text.textContent = result;
 
+// 2 Задание: Поиск наибольшего слова в строке
+// Попросите пользователя ввести строку.
+// Разделите введенную строку на отдельные слова.
+// Найдите самое длинное слово в строке.
+// Выведите найденное самое длинное слово на экран.
+// Пример ввода/вывода:
+// Введите строку: JavaScript - это прекрасный язык программирования!
+// Самое длинное слово: программирования
 
+// let text = document.getElementById('text');
+// let str = prompt("Введите строку:");
+// let arr = str.split(" ");
+
+// let result = arr.reduce((word, elem) => word.length > elem.length ? word : elem);
+// text.textContent = result;
