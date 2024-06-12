@@ -83,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
             game = false;
         } else if (!playingField.includes("")) {
             game = false;
+            message.textContent = "Game draw!";
         } else {
             switchPlayer()
         }
