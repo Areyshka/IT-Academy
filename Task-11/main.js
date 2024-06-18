@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
             currentPlayer = "X";
             cells.forEach(cell => {
                 cell.textContent = "";
-                cell.classList.remove("X", "O")
+                cell.classList.remove("X", "O", "line", "diagonal1", "diagonal2", "vertical" )
             });
             game = true;
             message.textContent = "";
@@ -98,8 +98,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
     
             if (one === two && two === three) {
-                message.textContent = `${currentPlayer} wins!`
+                message.textContent = `${currentPlayer} wins!`;
                 win = true;
+                comb.forEach(index => {
+                    cells[index].classList.add("line")
+                });
+
+                // Определение направления линии зачёркивания выигрышной комбинации и добавление соответствующего класса.
+                if (comb[0] % 3 === comb[1] % 3) {
+                    comb.forEach(index => cells[index].classList.add("vertical"));
+                } else if(Math.floor(comb[0] / 3) === Math.floor(comb[1] / 3)) {
+                    comb.forEach(index => cells[index].classList.add("line"));
+                } else if(comb[0] === 0 && comb[2] === 8) {
+                    comb.forEach(index => cells[index].classList.add("diagonal1"));
+                } else if (comb[0] === 2 && comb[2] === 6) {
+                    comb.forEach(index => cells[index].classList.add("diagonal2"));
+                }
                 break;
             }
         }
